@@ -16,6 +16,6 @@ public class TestGolfer {
 /* 	String surname = golfer.getLastname(); */
  	Double scratch = golfer.getHandicap();
  	
- 	Assert.assertEquals(100.0,scratch);
+ 	Assert.assertEquals(99.0,scratch);
  }
 }
