@@ -9,7 +9,7 @@ public class TestGolfer {
 	
  @Test
 
-    public void TestGettersandSetters() {
+    public void TestGettersandSetters() { 
 	Golfer golfer = new Golfer ("joe","malachowski",99);
 
 /* 	String name = golfer.getFirstname(); */
