@@ -35,46 +35,22 @@
           </configuration>
           <executions>
             <execution>
-              <id>prepare-test-coverage</id>
+              <id>default-prepare-agent</id>
               <goals>
                 <goal>prepare-agent</goal>
               </goals>
-              <configuration>
-                <propertyName>surefireArgLine</propertyName>
-              </configuration>
             </execution>
             <execution>
               <id>generate-report</id>
               <goals>
                 <goal>report</goal>
               </goals>
-              <configuration>
-                <outputDirectory>${project.reporting.outputDirectory}/jacoco-aggregate</outputDirectory>
-              </configuration>
             </execution>
             <execution>
               <id>verify-test-coverage</id>
               <goals>
                 <goal>check</goal>
               </goals>
-              <configuration>
-                <rules>
-                  <rule>
-                    <element>BUNDLE</element>
-                    <excludes>
-                      <exclude>*Mojo</exclude>
-                    </excludes>
-                    <limits>
-                      <limit>
-                        <counter>INSTRUCTION</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>70%</minimum>
-                      </limit>
-                    </limits>
-                  </rule>
-                </rules>
-               <outputDirectory>${project.reporting.outputDirectory}/jacoco-aggregate</outputDirectory>
-              </configuration>
             </execution>
           </executions>
         </plugin>
