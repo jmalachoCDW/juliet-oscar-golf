@@ -10,7 +10,7 @@ public class TestGolfer {
  @Test
 
     public void TestGettersandSetters() {
-	Golfer golfer = new Golfer ("joe","malachowski",100);
+	Golfer golfer = new Golfer ("joe","malachowski",99);
 
 /* 	String name = golfer.getFirstname(); */
 /* 	String surname = golfer.getLastname(); */
