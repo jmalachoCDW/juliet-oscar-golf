@@ -10,21 +10,16 @@ public class Golfer {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.handicap = handicap;
-		
 	}
-	
 	public String getFirstname () {
 		return firstname;
-		
 	}
 
 	public String getLastname () {
 		return lastname;
-		
 	}
 	
 	public Double getHandicap () {
 		return handicap;
-		
 	}
 }
