@@ -22,4 +22,7 @@ public class Golfer {
 	public Double getHandicap () {
 		return handicap;
 	}
+	public void setFirstname(String name) {
+	       this.firstname = name;
+	    }
 }
