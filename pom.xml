@@ -32,6 +32,8 @@
             <excludes>
               <exclude>**/*Mojo.class</exclude>
             </excludes>
+            <output>file</output>
+            <append>true</append>
           </configuration>
           <executions>
             <execution>
